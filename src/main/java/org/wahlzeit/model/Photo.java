@@ -134,6 +134,9 @@ public class Photo extends DataObject {
 	/**
 	 *
 	 */
+	//location attribute for cw#03
+	protected Location loc;
+	
 	public Photo() {
 		id = PhotoId.getNextId();
 		incWriteCount();
@@ -146,6 +149,21 @@ public class Photo extends DataObject {
 		id = myId;
 
 		incWriteCount();
+	}
+
+	//setter and getter for cw#03
+	/**
+	 * @methodtype get
+	 */
+	public Location getLocation() {
+		return loc;
+	}
+
+	/**
+	 * @methodtype set
+	 */
+	public void setLocation(Location loc) {
+		this.loc=loc;
 	}
 
 	/**
